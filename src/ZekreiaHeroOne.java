@@ -5,7 +5,8 @@ public class ZekreiaHeroOne {
 
 	String hero1;
 	int ability1;
-
+	int outline1;
+// Name
 	public void Hero1Name() {
 
 		Scanner heroName = new Scanner(System.in);
@@ -22,9 +23,19 @@ public class ZekreiaHeroOne {
 			intAbility.nextLine();
 		}		
 		ability1 = intAbility.nextInt();
-	}
-	public void Outline1(){
-		out.println(hero1 + " има " + ability1 + " стойност" );
-	}
+		}
 
-}
+	
+		// geters
+	public String getName() {
+		return hero1;
+	}
+	
+	public int getAbility1(){
+		return ability1;
+	}
+	
+	}
+	
+		
+
