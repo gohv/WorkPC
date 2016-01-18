@@ -6,7 +6,8 @@ public class ZekreiaHeroOne {
 	String hero1;
 	int ability1;
 	int outline1;
-// Name
+
+	// Name
 	public void Hero1Name() {
 
 		Scanner heroName = new Scanner(System.in);
@@ -21,21 +22,17 @@ public class ZekreiaHeroOne {
 		while (!intAbility.hasNextInt()) {
 			out.print("Моля напишете число:");
 			intAbility.nextLine();
-		}		
-		ability1 = intAbility.nextInt();
 		}
+		ability1 = intAbility.nextInt();
+	}
 
-	
-		// geters
+	// geters
 	public String getName() {
 		return hero1;
 	}
-	
-	public int getAbility1(){
+
+	public int getAbility1() {
 		return ability1;
 	}
-	
-	}
-	
-		
 
+}

@@ -23,10 +23,13 @@ public class ZekreiaHeroTwo {
 		}		
 		ability2 = intAbility.nextInt();
 	}
-	// Outline
-	public void Outline2(){
-		out.println(hero2 + " има " + ability2 + " стойност" );
+	// geters
+	public String getName2() {
+		return hero2;
 	}
-		
+	public int getAbility2(){
+		return ability2;
+	}
+	
 		
 }
