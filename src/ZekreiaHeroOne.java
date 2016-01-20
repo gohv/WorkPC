@@ -7,7 +7,7 @@ public class ZekreiaHeroOne {
 	String hero1;
 	int ability1;
 	
-
+	
 	// Name
 	public void Hero1Name() {
 
@@ -18,20 +18,24 @@ public class ZekreiaHeroOne {
 
 	// Ability
 	public void Hero1Ability() {
-		Scanner intAbility = new Scanner(System.in);
+		Scanner inputAbility = new Scanner(System.in);
 		out.printf("Напишете стойноста на %s: ", hero1);
-		while (!intAbility.hasNextInt()) {
+		while (!inputAbility.hasNextInt()) {
 			out.print("Моля напишете число:");
-			intAbility.nextLine();
+			inputAbility.nextLine();
 		}
-		ability1 = intAbility.nextInt();
+		ability1 = inputAbility.nextInt();
 	}
 	// dice 1
-	public int getDiceAbility1(){
 		int dice1 = new Random().nextInt(20) + 1;
-		int abilityDice1 = dice1 + ability1;
-		return abilityDice1;
-	}
+		
+		int diceAbility1 = dice1 + ability1;
+		
+		public void kur(){
+			out.printf("\nZar: %s ", dice1);
+			out.printf("\n%s ", diceAbility1);
+		}
+		
 		
 		
 	// geters
@@ -42,7 +46,10 @@ public class ZekreiaHeroOne {
 	public int getAbility1() {
 		return ability1;
 	}
-	
+	public int getDice() {
+		return dice1;
+	}
+
 
 	
 	

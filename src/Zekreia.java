@@ -25,9 +25,7 @@ public class Zekreia {
 		// dice hero1
 		
 		out.printf("%s хвърля зар: ", heroOne.getName());		
-		// out.println(heroOne.getDice());
-		out.println(heroOne.getAbility1());
-		out.println("OBSTO " + heroOne.getDiceAbility1());
+		heroOne.kur();
 		
 	
 		/* dice hero2		
