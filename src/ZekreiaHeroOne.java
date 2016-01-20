@@ -1,11 +1,12 @@
 import static java.lang.System.out;
 import java.util.Scanner;
+import java.util.Random;
 
 public class ZekreiaHeroOne {
 
 	String hero1;
 	int ability1;
-	int outline1;
+	
 
 	// Name
 	public void Hero1Name() {
@@ -25,7 +26,14 @@ public class ZekreiaHeroOne {
 		}
 		ability1 = intAbility.nextInt();
 	}
-
+	// dice 1
+	public int getDiceAbility1(){
+		int dice1 = new Random().nextInt(20) + 1;
+		int abilityDice1 = dice1 + ability1;
+		return abilityDice1;
+	}
+		
+		
 	// geters
 	public String getName() {
 		return hero1;
@@ -34,5 +42,10 @@ public class ZekreiaHeroOne {
 	public int getAbility1() {
 		return ability1;
 	}
+	
 
-}
+	
+	
+
+	}
+	
