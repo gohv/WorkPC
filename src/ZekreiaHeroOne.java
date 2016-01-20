@@ -6,8 +6,7 @@ public class ZekreiaHeroOne {
 
 	String hero1;
 	int ability1;
-	
-	
+
 	// Name
 	public void Hero1Name() {
 
@@ -26,18 +25,13 @@ public class ZekreiaHeroOne {
 		}
 		ability1 = inputAbility.nextInt();
 	}
+
 	// dice 1
-		int dice1 = new Random().nextInt(20) + 1;
-		
-		int diceAbility1 = dice1 + ability1;
-		
-		public void kur(){
-			out.printf("\nZar: %s ", dice1);
-			out.printf("\n%s ", diceAbility1);
-		}
-		
-		
-		
+
+	int dice1 = new Random().nextInt(20) + 1;
+
+	
+
 	// geters
 	public String getName() {
 		return hero1;
@@ -46,13 +40,9 @@ public class ZekreiaHeroOne {
 	public int getAbility1() {
 		return ability1;
 	}
+
 	public int getDice() {
 		return dice1;
 	}
 
-
-	
-	
-
-	}
-	
+}

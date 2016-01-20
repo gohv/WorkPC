@@ -14,19 +14,19 @@ public class Zekreia {
 		// hero1
 		ZekreiaHeroOne heroOne = new ZekreiaHeroOne();
 		heroOne.Hero1Name();
-		heroOne.Hero1Ability();
+		heroOne.Hero1Ability();		
+		
+		// dice hero1
+		
+		out.printf("%s хвърля зар: ", heroOne.getName());		
+		out.printf("%s", heroOne.getDice());
+		
 		
 		/* hero 2
 		ZekreiaHeroTwo heroTwo = new ZekreiaHeroTwo();
 		heroTwo.Hero2Name();
 		heroTwo.Hero2Ability();
 		*/
-		
-		// dice hero1
-		
-		out.printf("%s хвърля зар: ", heroOne.getName());		
-		heroOne.kur();
-		
 	
 		/* dice hero2		
 		Dice dice2 = new Dice();
