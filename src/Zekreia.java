@@ -4,7 +4,7 @@ import java.util.Random;
 public class Zekreia {
 
 	public static void main(String[] args) {
-		
+		// NOTES: пише се името и стойноста на герой 1, после герой 1 хвърля зар.След него се пише герой 2 по същия начин
 		
 		out.println("Добре дошли в бойната система на Зекрея!");
 		out.println(" ");
@@ -18,9 +18,8 @@ public class Zekreia {
 		
 		// dice hero1
 		
-		out.printf("%s хвърля зар: ", heroOne.getName());		
-		out.printf("%s", heroOne.getDice());
-		
+		out.println("tova e zar: " + heroOne.getDice1());
+		out.println("tova e obsto: " + heroOne.getAbilityDice1());
 		
 		/* hero 2
 		ZekreiaHeroTwo heroTwo = new ZekreiaHeroTwo();

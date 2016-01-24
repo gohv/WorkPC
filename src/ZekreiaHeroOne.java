@@ -4,8 +4,9 @@ import java.util.Random;
 
 public class ZekreiaHeroOne {
 
-	String hero1;
-	int ability1;
+	public String hero1;
+	public int ability1;
+	public int abilityDice1;
 
 	// Name
 	public void Hero1Name() {
@@ -23,14 +24,10 @@ public class ZekreiaHeroOne {
 			out.print("Моля напишете число:");
 			inputAbility.nextLine();
 		}
-		ability1 = inputAbility.nextInt();
+
 	}
 
 	// dice 1
-
-	int dice1 = new Random().nextInt(20) + 1;
-
-	
 
 	// geters
 	public String getName() {
@@ -41,8 +38,14 @@ public class ZekreiaHeroOne {
 		return ability1;
 	}
 
-	public int getDice() {
-		return dice1;
+	int dice = new Random().nextInt(20) + 1;
+
+	public int getAbilityDice1() {
+
+		return abilityDice1 + dice;
+	}
+	public int getDice1(){
+		return dice;
 	}
 
 }
