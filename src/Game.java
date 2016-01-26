@@ -7,15 +7,29 @@ public class Game {
 	private String mMisses;
 
 	public Game(String answer) {
-		Scanner input = new Scanner(System.in);
-		System.out.println("Type the word: ");
-		answer = input.nextLine();
+		// Scanner input = new Scanner(System.in);
+		// System.out.println("Type the word: ");		
+		// answer = input.nextLine();
 		mAnswer = answer;
 		mHits = "";
 		mMisses = "";
 	}
+	
+	private char validateGuess(char letter) {
+		if(! Character.isLetter(letter)){
+			
+			throw new IllegalArgumentException("a letter is required!");
+		}
+		letter = Character.toLowerCase(letter);
+		if(mMisses.indexOf(letter) >= 0 || mHits.indexOf(letter) >=0 )
+		{
+			throw new IllegalArgumentException(letter + " has already been guessed");
+		}
+		return letter;
+	}
 
 	public boolean applyGuess(char letter) {
+		letter = validateGuess(letter);
 		boolean isHit = mAnswer.indexOf(letter) >= 0;
 		if (isHit) {
 			mHits += letter;
