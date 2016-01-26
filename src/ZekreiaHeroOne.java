@@ -31,10 +31,12 @@ public class ZekreiaHeroOne {
 	// dice 1
 	int dice = new Random().nextInt(20) + 1;
 	int diceAbility = dice + ability1;
-
-	public void getDiceAbility() {
-		out.println("OBSTO " + diceAbility);
+	
+	public void diceRoll(){
+		out.println(getName()+ " хвърля зар: " + getDice1());
 	}
+
+	
 
 	// geters
 	public String getName() {
@@ -47,5 +49,8 @@ public class ZekreiaHeroOne {
 
 	public int getDice1() {
 		return dice;
+	}
+	public void getDiceAbility() {
+		out.println("Общата стойност на "+ hero1 + " e: " + diceAbility);
 	}
 }

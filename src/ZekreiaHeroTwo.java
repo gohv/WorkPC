@@ -1,4 +1,6 @@
 import static java.lang.System.out;
+
+import java.util.Random;
 import java.util.Scanner;
 
 public class ZekreiaHeroTwo {
@@ -9,20 +11,28 @@ public class ZekreiaHeroTwo {
 	public void Hero2Name() {
 
 		Scanner heroName = new Scanner(System.in);
-		out.print("Напишете името на втория герой: ");
+		out.print("РќР°РїРёС€РµС‚Рµ РёРјРµС‚Рѕ РЅР° РІС‚РѕСЂРёСЏ РіРµСЂРѕР№: ");
 		hero2 = heroName.nextLine();
 	}
 
 	// Ability
 	public void Hero2Ability() {
 		Scanner inputAbility = new Scanner(System.in);
-		out.printf("Напишете стойноста на %s: ", hero2);
+		out.printf("РќР°РїРёС€РµС‚Рµ СЃС‚РѕР№РЅРѕСЃС‚Р° РЅР° %s: ", hero2);
 		while (!inputAbility.hasNextInt()) {
-			out.print("Моля напишете число:");
+			out.print("РњРѕР»СЏ РЅР°РїРёС€РµС‚Рµ С‡РёСЃР»Рѕ:");
 			inputAbility.nextLine();
 		}		
 		ability2 = inputAbility.nextInt();
+		diceAbility = dice + ability2;		
 	}
+	// dice 2
+		int dice = new Random().nextInt(20) + 1;
+		int diceAbility = dice + ability2;
+		public void diceRoll(){
+			out.println(getName2() + " С…РІСЉСЂР»СЏ Р·Р°СЂ: " + getDice());
+		}
+		
 	// geters
 	public String getName2() {
 		return hero2;
@@ -30,6 +40,11 @@ public class ZekreiaHeroTwo {
 	public int getAbility2(){
 		return ability2;
 	}
-	
+	public int getDice() {
+		return dice;
+	}
+	public void getDiceAbility() {
+		out.println("РћР±С‰Р°С‚Р° СЃС‚РѕР№РЅРѕСЃС‚ РЅР° "+ hero2 + " e: " + diceAbility);
+	}
 		
 }

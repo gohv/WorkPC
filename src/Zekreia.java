@@ -13,30 +13,35 @@ public class Zekreia {
 		out.println(" ");
 
 		// hero1
+		
 		ZekreiaHeroOne heroOne = new ZekreiaHeroOne();
 		heroOne.Hero1Name();
 		heroOne.Hero1Ability();
 
-		// dice hero1
-
-	
-		out.println("tova e ability: " + heroOne.getAbility1());
+		// dice hero1	
 		
-		out.println("ZAR " + heroOne.getDice1());
+		heroOne.diceRoll();
 		heroOne.getDiceAbility();
 		
-		/*
-		 * hero 2 ZekreiaHeroTwo heroTwo = new ZekreiaHeroTwo();
-		 * heroTwo.Hero2Name(); heroTwo.Hero2Ability();
-		 */
+		out.println("Ред е на Герой 2");
+		
+		
+		 // hero 2 
+		  ZekreiaHeroTwo heroTwo = new ZekreiaHeroTwo();
+		  heroTwo.Hero2Name();
+		  heroTwo.Hero2Ability();
+		  
+		  // dice hero 2
+		  heroTwo.diceRoll();
+			heroTwo.getDiceAbility();
+	
+	}}
+		
 
-		/*
-		 * dice hero2 Dice dice2 = new Dice(); out.printf("%s хвърля зар: ",
-		 * heroTwo.getName2()); out.println(dice.getDice2());
-		 */
+		
+		  
+		 
 
-		// променлива dicePlusAbility 1 и 2 трябва да бъде променена и
-		// премахната!
-	}
+		
 
-}
+
