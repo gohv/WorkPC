@@ -15,13 +15,13 @@ public class ZekreiaHeroTwo {
 
 	// Ability
 	public void Hero2Ability() {
-		Scanner intAbility = new Scanner(System.in);
+		Scanner inputAbility = new Scanner(System.in);
 		out.printf("Напишете стойноста на %s: ", hero2);
-		while (!intAbility.hasNextInt()) {
+		while (!inputAbility.hasNextInt()) {
 			out.print("Моля напишете число:");
-			intAbility.nextLine();
+			inputAbility.nextLine();
 		}		
-		ability2 = intAbility.nextInt();
+		ability2 = inputAbility.nextInt();
 	}
 	// geters
 	public String getName2() {

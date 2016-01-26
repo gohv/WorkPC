@@ -1,3 +1,5 @@
+import java.util.Scanner;
+
 public class Game {
 	public static final int MAX_MISSES = 7;
 	private String mAnswer;
@@ -5,6 +7,9 @@ public class Game {
 	private String mMisses;
 
 	public Game(String answer) {
+		Scanner input = new Scanner(System.in);
+		System.out.println("Type the word: ");
+		answer = input.nextLine();
 		mAnswer = answer;
 		mHits = "";
 		mMisses = "";

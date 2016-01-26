@@ -24,10 +24,17 @@ public class ZekreiaHeroOne {
 			out.print("Моля напишете число:");
 			inputAbility.nextLine();
 		}
-
+		ability1 = inputAbility.nextInt();
+		diceAbility = dice + ability1;
 	}
 
 	// dice 1
+	int dice = new Random().nextInt(20) + 1;
+	int diceAbility = dice + ability1;
+
+	public void getDiceAbility() {
+		out.println("OBSTO " + diceAbility);
+	}
 
 	// geters
 	public String getName() {
@@ -38,14 +45,7 @@ public class ZekreiaHeroOne {
 		return ability1;
 	}
 
-	int dice = new Random().nextInt(20) + 1;
-
-	public int getAbilityDice1() {
-
-		return abilityDice1 + dice;
-	}
-	public int getDice1(){
+	public int getDice1() {
 		return dice;
 	}
-
 }
